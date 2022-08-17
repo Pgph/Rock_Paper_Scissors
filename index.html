@@ -2,36 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
 
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <header>
+    <h1>
+      <span>ROCK</span>
+      <span>PAPER</span>
+      <span>SCISSORS</span>
+    </h1>
+    <div class="score">
+      <span>SCORE</span>
+      <strong class="points">12</strong>
+    </div>
+  </header>
+<main>
+  <section class="options">
+    <button class="button button--paper">
+      <div class="button__image-container">
+        <img src="/images/icon-paper.svg" alt="Paper">
+      </div> 
+    </button>
+    <button class="button button--scissors">
+      <div class="button__image-container">
+        <img src="/images/icon-scissors.svg" alt="Scissors">
+      </div>
+    </button>
+    <button class="button button--rock">
+      <div class="button__image-container">
+        <img src="/images/icon-rock.svg" alt="Rock">
+      </div>
+    </button>
+    </div>
+  </section>
+<section class="fight">
+  <div class="pick">
+    <span class="pick__title">YOU PICKED</span>
+    <div class="button button--paper">
+      <div class="button__image-container">
+        <img src="/images/icon-paper.svg" alt="Paper">
+      </div> 
+    </div>
   </div>
+  <div class="pick">
+    <span class="pick__title">THE HOUSE PICKED</span>
+    <!-- <div class="pick__placeholder"> -->
+      <div class="button button--paper">
+        <div class="button__image-container">
+          <img src="/images/icon-paper.svg" alt="Paper">
+        </div> 
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
